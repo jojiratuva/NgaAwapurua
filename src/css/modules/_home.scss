@@ -1,0 +1,110 @@
+//==============================
+//          landing start
+//==============================
+
+.home_Landing {
+    display: grid;
+    grid-template-columns: [start] 25vw [line2] 8vw [line3] 10vw [line4] auto [end];
+    grid-template-rows: auto;
+
+
+    height: 100vh;
+    padding-top: 60px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .home_Landing_item_1 {
+        @include flex-col;
+        justify-content: flex-end;
+        border-right: 1px solid $white;
+        background-color: $blue-opac;
+
+        p {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+
+    .home_Landing_item_2 {
+        background-color: $white;
+        opacity: .2;
+    }
+
+    .home_Landing_item_3 {
+        border-right: 1px solid $white;
+        border-left: 1px solid $white;
+        background-color: $blue-opac;
+
+    }
+
+    .home_Landing_item_4 {
+        @include flex-col;
+        align-items: flex-start;
+        justify-content: center;
+        background-color: $blue-opac;
+        padding: 0 30px;
+
+        .item_4_a,
+        .item_4_b,
+        .item_4_c,
+        .item_4_d {
+            text-align: left;
+            width: 100%;
+            text-transform: uppercase;
+        }
+
+        .item_4_a {
+            font-size: 1vw;
+        }
+
+        .item_4_b {
+            line-height: 1.9em;
+            font-size: 3.3vw;
+            padding: 40px 0;
+        }
+
+        .item_4_c {
+            line-height: 1.5em;
+            font-weight: 300;
+            font-size: 1.5vw;
+            letter-spacing: .8px;
+
+        }
+
+        .item_4_d {
+            padding: 40px 0;
+            text-align: left;
+
+            button {
+                width: 150px;
+                height: 60px;
+                font-size: 1.2vw;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                background-color: $accent-color;
+                border: none;
+                color: $blue;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.home_Landing_item_1,
+.home_Landing_item_2,
+.home_Landing_item_3,
+.home_Landing_item_4 {
+    padding: 10px;
+    font-family: $inter;
+    color: white;
+
+
+}
+
+//==============================
+//          landing end
+//==============================

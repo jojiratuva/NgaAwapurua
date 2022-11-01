@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+//colours
+$white: #ffffff;
+$white-opac: rgb(225, 225, 225, .3);
+$blue-opac: rgb(39, 54, 56, .3);
+$blue: #273638;
+$lightBlue: #3D4A4C;
+$darkGreen: #2A3827;
+$green: #475942;
+$yellow: #FFC700;
+
+$nav-color: $darkGreen;
+$font-color: $white;
+$accent-color: $yellow;
+$footer-color: $blue;
+$main-background: $green;
+
+//fonts
+$inter: 'Inter', sans-serif;
+$helvetica: Arial, Helvetica, sans-serif;
+
+// mixins 
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-col-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@mixin flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin flex-grid-r6-c1 {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+}

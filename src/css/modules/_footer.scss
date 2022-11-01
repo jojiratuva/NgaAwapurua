@@ -1,0 +1,162 @@
+//==============================
+//          footer start
+//==============================
+.Footer {
+    @include flex-col;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: $footer-color;
+    font-family: $inter;
+
+    .Footer_list {
+        @include flex-row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border-top: 1px solid $white;
+        border-bottom: 1px solid $white;
+        padding: 20px 100px;
+
+        .Footer_list_1,
+        .Footer_list_2,
+        .Footer_list_3,
+        .Footer_list_4 {
+            @include flex-row;
+            align-items: center;
+            justify-content: space-between;
+            width: auto;
+            height: auto;
+
+            .Footer_list_line {
+                width: 20px;
+                height: 1px;
+                background-color: $white;
+                margin: 10px 0;
+            }
+
+            ul {
+                li {
+                    list-style-type: none;
+                    line-height: 25px;
+
+                    // Footer list header 
+                    p {
+                        color: $font-color;
+                        font-weight: 700;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        letter-spacing: .7px;
+
+                    }
+
+                    // footer list item 
+                    a {
+                        color: $font-color;
+                        font-weight: 300;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        letter-spacing: .7px;
+                    }
+                }
+
+                //li
+            }
+
+            //ul
+        }
+
+        //Footer_list_1, 2, 3, 4
+    }
+
+    //Footer_list
+
+    .Footer_socials {
+        @include flex-row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-bottom: 1px solid $white;
+        padding: 0 100px;
+
+        ul {
+            @include flex-row;
+
+            li {
+                display: inline-block;
+                list-style-type: none;
+                padding: 10px 25px;
+
+                a {
+                    color: $font-color;
+                    font-weight: 300;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    letter-spacing: .7px;
+                }
+            }
+        }
+    }
+
+    //Footer Socials
+
+    .Footer_newsletter {
+        @include flex-row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-bottom: 1px solid $white;
+        padding: 0 100px;
+        height: 100px;
+
+        input {
+            width: 450px;
+            height: 40px;
+            padding: 5px 10px;
+            border: 1px solid $white;
+            background-color: $lightBlue;
+            // color: $white;
+            text-transform: uppercase;
+            letter-spacing: .8px;
+            font-weight: 500;
+            font-size: 12px;
+        }
+
+        button {
+            width: 90px;
+            height: 40px;
+            padding: 5px 10px;
+            border: 1px solid $white;
+            text-transform: uppercase;
+            letter-spacing: .8px;
+            font-weight: 500;
+            font-size: 12px;
+        }
+    }
+
+    //Footer Newsletter
+    .Footer_bottom {
+        @include flex-row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 40px;
+
+        p {
+            color: $font-color;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 10px;
+            font-weight: 300;
+
+        }
+    }
+
+    //Footer Bottom
+}
+
+//Footer
+
+//==============================
+//          footer end
+//==============================

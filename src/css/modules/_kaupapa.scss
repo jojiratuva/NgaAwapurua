@@ -1,0 +1,149 @@
+.kaupapa_Landing {
+    display: grid;
+    grid-template-columns: [start] 35vw [line2] 10vw [line3] 35vw [line4] 10vw [line5] auto [end];
+    grid-template-rows: auto;
+
+    height: 100vh;
+    padding-top: 60px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+
+    .kaupapa_Landing_item_1,
+    .kaupapa_Landing_item_2,
+    .kaupapa_Landing_item_3,
+    .kaupapa_Landing_item_4,
+    .kaupapa_Landing_item_5 {
+        font-family: $inter;
+        color: $font-color;
+        border-right: solid 1px $font-color;
+        padding: 10px;
+        background-color: $blue-opac;
+
+
+    }
+
+    .kaupapa_Landing_item_1 {
+        @include flex-col;
+        justify-content: flex-end;
+        border-right: 1px solid $white;
+
+        p {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+
+    .kaupapa_Landing_item_3 {
+        @include flex-col;
+        justify-content: flex-end;
+        text-align: right;
+
+        p {
+            letter-spacing: 2px;
+            font-size: 2vw;
+            line-height: 3vw;
+            font-weight: 300;
+
+        }
+
+        #tagline {
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+
+    .kaupapa_Landing_item_4,
+    .kaupapa_Landing_item_5 {
+        overflow: hidden;
+        position: relative;
+        @include flex-row;
+        align-items: flex-end;
+        justify-content: center;
+        background-color: $blue-opac;
+
+        h1 {
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 5vw;
+            writing-mode: vertical-lr;
+        }
+    }
+}
+
+// =======================
+// Kaupapa content start
+//========================
+.kaupapa_Content {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: [start] 20vh [line1] auto [end];
+
+    height: auto;
+
+    background-color: $main-background;
+
+    .title,
+    .content {
+        color: $font-color;
+        font-family: $inter;
+    }
+
+    .title {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        @include flex-row;
+        // align-items: flex-end;
+        // justify-content: center;
+        border-top: 1px solid $white;
+        border-bottom: 1px solid $white;
+        place-items: center;
+        padding: 0 20px;
+
+        p {
+            font-size: 5vw;
+        }
+    }
+
+    .image {
+        grid-column-start: 6;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 3;
+
+        border-top: 1px solid $white;
+        border-left: 1px solid $white;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .content {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        padding: 20px;
+
+        p {
+            letter-spacing: .8px;
+            font-size: 1.8vw;
+            font-weight: 200;
+            padding-bottom: 30px;
+            line-height: 2.4vw;
+        }
+    }
+
+}
+
+
+// =======================
+// Kaupapa content end
+//========================
