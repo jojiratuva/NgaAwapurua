@@ -12,7 +12,7 @@ const Nav = () => {
             </div>
             <div className='Nav_list'>
                 <ul>
-                    <li className='list_item'><Link to="/kaupapa">Kaupapa</Link></li>
+                    <li className='list_item'><Link to="/kaupapa" >Kaupapa</Link></li>
                     {/* <li className='Nav_list_line'></li> */}
                     <li className='list_item'><Link to="/whatwedo">What we do</Link></li>
                     {/* <li className='Nav_list_line'></li> */}
@@ -20,25 +20,25 @@ const Nav = () => {
                 </ul>
             </div>
             <div className='Nav_socials'>
-                <Link to="/www.instagram.com">
+                <a href="/www.instagram.com">
                     <Instagram />
 
-                </Link>
-                <Link to="/https://www.instagram.com">
+                </a>
+                <a href="/https://www.instagram.com">
                     <Facebook />
 
-                </Link>
-                <Link to="/https://www.instagram.com">
+                </a>
+                <a href="/https://www.instagram.com">
                     <Twitter />
 
-                </Link>
-                <Link to="/https://www.instagram.com">
+                </a>
+                <a href="/https://www.instagram.com">
                     <Tiktok />
 
-                </Link>
+                </a>
             </div>
             <div className='Nav_donate'>
-                <p><Link>Donate</Link></p>
+                <p><Link to={'/donate'}>Donate</Link></p>
             </div>
         </div>
     )

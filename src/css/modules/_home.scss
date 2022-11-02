@@ -101,8 +101,7 @@
     padding: 10px;
     font-family: $inter;
     color: white;
-
-
+    @include text-shadow;
 }
 
 //==============================

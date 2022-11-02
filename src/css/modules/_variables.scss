@@ -7,6 +7,7 @@ $blue-opac: rgb(39, 54, 56, .3);
 $blue: #273638;
 $lightBlue: #3D4A4C;
 $darkGreen: #2A3827;
+$lightgreen: #3F4C3D;
 $green: #475942;
 $yellow: #FFC700;
 
@@ -19,6 +20,11 @@ $main-background: $green;
 //fonts
 $inter: 'Inter', sans-serif;
 $helvetica: Arial, Helvetica, sans-serif;
+
+//text-shadow
+@mixin text-shadow {
+    text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.29);
+}
 
 // mixins 
 @mixin flex-row {

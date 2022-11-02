@@ -1,0 +1,129 @@
+.WhatWeDoItems_container {
+    padding-top: 60px;
+
+    color: $white;
+    font-family: $inter;
+
+    width: auto;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+
+
+    .WhatWeDoItems_image {
+        grid-column: 1 / span 6;
+        grid-row: 1 / span 13;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        padding: 30px 20px;
+
+        @include flex-row;
+        align-items: flex-end;
+        // justify-content: space-between;
+
+        .button_back {
+            button {
+                cursor: pointer;
+                position: fixed;
+                top: 80px;
+                left: 20px;
+                width: 80px;
+                font-size: 2vw;
+                font-weight: 300;
+                border: none;
+                background-color: rgb(0, 0, 0, .0);
+                color: $white;
+                @include flex-row;
+                align-items: center;
+                justify-content: space-between;
+                text-transform: uppercase;
+                text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.29);
+            }
+        }
+
+        .genre-container {
+            @include flex-col;
+            justify-content: space-between;
+            width: 50%;
+            height: 18vh;
+            text-align: left;
+            border-top: 2px solid $white;
+            padding: 15px 0;
+            writing-mode: vertical-rl;
+
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: .8vw;
+            font-weight: 700;
+            text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.29);
+        }
+    }
+
+    .WhatWeDoItems_header {
+        grid-column: 7 / span 13;
+        grid-row: 1 / span 3;
+
+        background-color: $lightBlue;
+        border-left: 1px solid $white;
+        border-bottom: 1px solid $white;
+
+        padding: 0 20px;
+
+        @include flex-col;
+        justify-content: center;
+
+        h1 {
+            text-align: right;
+
+            font-size: 5vw;
+            text-transform: uppercase;
+            line-height: 5vw;
+        }
+    }
+
+    .WhatWeDoItems_content {
+        grid-column: 7 / span 13;
+        grid-row: 4 / span 13;
+
+        background-color: $lightBlue;
+        border-left: 1px solid $white;
+
+        padding: 30px;
+
+        @include flex-col;
+        justify-content: space-between;
+
+        .date {
+            p {
+                font-size: 2vw;
+                font-weight: 600;
+            }
+        }
+
+        .content {
+            p {
+                text-align: justify;
+                font-size: 1.5vw;
+                font-weight: 300;
+                letter-spacing: .8px;
+                line-height: 1.4em;
+            }
+        }
+
+        .author {
+            p {
+                text-transform: capitalize;
+                text-align: right;
+                font-size: .8vw;
+                font-weight: 300;
+            }
+        }
+
+    }
+}

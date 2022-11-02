@@ -21,12 +21,10 @@ const WhatWeDoItems = () => {
     const showWhatWeDoPosts = whatWeDoPosts.map((post, index) => {
         return (
 
-            <Link className="whatWeDo_item" key={index} style={{ backgroundImage: `url(${post._embedded['wp:featuredmedia'][0].source_url})` }}>
-                {/* <img src={post._embedded['wp:featuredmedia'][0].source_url} alt={post.title.rendered} /> */}
+            <Link to={`/whatwedo/${post.id}`} className="whatWeDo_item" key={index} style={{ backgroundImage: `url(${post._embedded['wp:featuredmedia'][0].source_url})` }}>
+
                 <p>{post.title.rendered}</p>
-                {/* <div className="content">
-                    <div dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
-                </div> */}
+
             </Link >
 
         )

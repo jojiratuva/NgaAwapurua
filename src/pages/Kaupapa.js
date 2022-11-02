@@ -27,6 +27,9 @@ const KaupapaLanding = () => {
         </div>
     )
 }
+
+
+
 const KaupapaContent1 = () => {
     // -- activate this code --
     //=============================================
@@ -60,11 +63,13 @@ const KaupapaContent1 = () => {
     )
 }
 
+
 const Kaupapa = () => {
     return (
         <>
             <KaupapaLanding />
             <KaupapaContent1 />
+
         </>
     )
 }

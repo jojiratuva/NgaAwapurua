@@ -21,7 +21,7 @@
         border-right: solid 1px $font-color;
         padding: 10px;
         background-color: $blue-opac;
-
+        @include text-shadow;
 
     }
 
