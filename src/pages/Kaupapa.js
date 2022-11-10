@@ -53,11 +53,13 @@ const KaupapaContent1 = () => {
                 <p>Nga Awapurua Kaupapa
                 </p>
             </div>
+            <div className='title_a'></div>
+
             <div className='image' style={{ backgroundImage: `url(${sheepImage})` }}></div>
             <div className='content'>
+                <p> <b>Egestas congue quisque.</b></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet. Egestas congue quisque egestas diam in. Pretium quam vulputate dignissim suspendisse in est ante in nibh. Consectetur lorem donec massa sapien faucibus et. </p>
                 <p>Posuere sollicitudin aliquam ultrices sagittis. Neque sodales ut etiam sit amet nisl purus. At elementum eu facilisis sed odio morbi quis commodo. Arcu risus quis varius quam quisque id. Id volutpat lacus laoreet non curabitur gravida arcu ac. Imperdiet massa tincidunt nunc pulvinar sapien.</p>
-                <p>Risus feugiat in ante metus. Donec massa sapien faucibus et molestie ac feugiat sed. Eget magna fermentum iaculis eu non diam phasellus. Arcu vitae elementum curabitur vitae nunc sed.</p>
             </div>
         </div>
     )

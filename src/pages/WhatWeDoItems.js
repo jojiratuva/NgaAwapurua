@@ -6,7 +6,7 @@ import { ArrowLeftCircleFill } from "react-bootstrap-icons"
 import formateDate from './utilities/formatDate'
 
 
-const baseUrl = `http://localhost/Formative/wp-json/wp/v2/`
+const baseUrl = process.env.REACT_APP_WP_API_BASEURL;
 
 
 const WhatWeDoItems = () => {

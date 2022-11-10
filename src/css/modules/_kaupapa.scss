@@ -80,7 +80,7 @@
 .kaupapa_Content {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: [start] 20vh [line1] auto [end];
+    grid-template-rows: repeat(8, 1fr);
 
     height: auto;
 
@@ -93,10 +93,9 @@
     }
 
     .title {
-        grid-column-start: 1;
-        grid-column-end: 6;
-        grid-row-start: 1;
-        grid-row-end: 2;
+        grid-column: 1/ span 6;
+        grid-row: 1 / span 2;
+
         @include flex-row;
         // align-items: flex-end;
         // justify-content: center;
@@ -110,14 +109,18 @@
         }
     }
 
-    .image {
-        grid-column-start: 6;
-        grid-column-end: 9;
-        grid-row-start: 1;
-        grid-row-end: 3;
+    .title_a {
+        border: 1px solid $white;
 
-        border-top: 1px solid $white;
-        border-left: 1px solid $white;
+        grid-column: 7 / span 9;
+        grid-row: 1 / span 2;
+    }
+
+    .image {
+        grid-column: 1 / span 2;
+        grid-row: 3 / span 9;
+
+        border-right: 1px solid $white;
 
         background-position: center;
         background-repeat: no-repeat;
@@ -125,12 +128,15 @@
     }
 
     .content {
-        grid-column-start: 1;
-        grid-column-end: 6;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        grid-column: 3 / span 9;
+        grid-row: 3 / span 9;
+
 
         padding: 20px;
+
+        b {
+            text-transform: capitalize;
+        }
 
         p {
             letter-spacing: .8px;

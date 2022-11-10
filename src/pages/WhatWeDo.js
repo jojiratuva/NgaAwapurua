@@ -2,7 +2,7 @@ import { useAxios } from "use-axios-client"
 
 import { Link } from "react-router-dom"
 
-const baseUrl = `http://localhost/Formative/wp-json/wp/v2/`
+const baseUrl = process.env.REACT_APP_WP_API_BASEURL;
 
 const WhatWeDoItems = () => {
 
